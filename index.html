@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easyedit</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="header-container">
+            <span>easyedit<i class="ri-image-edit-line"></i>
+            </span>
+
+            <button class="btn-main">export</button>
+        </div>
+
+        <div class="display-container">
+            <div class="left-image-container">
+
+                <div class="image-uploader" id="image-uploader">
+                    <label for="main-img-input">Upload Image<i class="ri-upload-line"></i></label>
+                    <input type="file" accept="image/*" id="main-img-input">
+                </div>
+                <div id="img-container">
+                    <img src="#" id="img-main">
+                </div>
+
+            </div>
+            <div class="right-filter-container">
+                <div class="filter-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div>
+                Save
+            </div>
+
+            <div class="setting-container">
+                <div><i class="ri-brush-fill"></i></div>
+                <div><i class="ri-lightbulb-fill"></i></div>
+            </div>
+            <div class="setting-container">
+                <div>?</div>
+            </div>
+        </div>
+
+        <div class="settings">
+            <div class="setting-pannel"></div>
+        </div>
+    </div>
+
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

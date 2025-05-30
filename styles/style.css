@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(28, 26, 26);
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.header-container {
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.header-container span {
+    margin-left: 4vw;
+}
+
+.btn-main {
+    background-color: #097bec;
+    font-size: 0.8em;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 4vw;
+    color: black;
+    letter-spacing: 2px;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.btn-main:hover {
+    background-color: rgba(52, 52, 222, 0.912);
+}
+
+.display-container {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-image-container {
+    height: 100%;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 66, 66);
+}
+
+.right-filter-container {
+    height: 100%;
+    width: 25vw;
+}
+
+.footer-container {
+    height: 8vh;
+    width: 86vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.setting-container {
+    display: flex;
+    gap: 15px;
+}
+
+.setting-container div {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-container div i {
+    color: #097bec;
+}
+
+#main-img-input {
+    display: none;
+}
+
+.image-uploader {
+    height: 30%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: dotted white 5px;
+    border-radius: 22px;
+}
+
+.image-uploader label {
+    font-size: 2em;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.image-uploader i {
+    color: gray;
+}
+
+.filter-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.filter-container div {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    background-color: rgb(67, 66, 66);
+}
+
+#img-container {
+    height: 70%;
+    width: 90%;
+    background-color: red;
+    display: none;
+}
+
+
+#img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.settings {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.setting-pannel {
+    height: 70vh;
+    width: 350px;
+    transform: translate(40vw, 10vh);
+    background-color: rgba(30, 29, 29, 0.727);
+    box-shadow: 0 8px 32px 0 rgba(193, 195, 240, 0.162);
+    backdrop-filter: blur(2px);
+    border-radius: 14px;
+}
