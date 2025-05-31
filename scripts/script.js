@@ -8,6 +8,8 @@ let imgUploader = document.getElementById("image-uploader")
 let pannelSettingHandler = document.getElementById("pannel-setting-handler")
 let settingMainPannel = document.getElementById("settings")
 let settingPannel = document.getElementById("setting-pannel")
+let loaderBody = document.getElementById("loader")
+
 
 
 //all image control setting
@@ -84,3 +86,12 @@ opacity.addEventListener("change",()=>{
 sepia.addEventListener("change",()=>{
     mainEditableImg.style.filter = `sepia(${sepia.value})`
 })
+
+
+//setTimeout
+
+setTimeout(()=>{
+    loaderBody.style.display="none"
+},4000)
+
+
