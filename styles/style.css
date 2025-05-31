@@ -164,6 +164,8 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    display:none;
+    cursor:pointer;
 }
 
 .setting-pannel {
@@ -174,4 +176,30 @@ html {
     box-shadow: 0 8px 32px 0 rgba(193, 195, 240, 0.162);
     backdrop-filter: blur(2px);
     border-radius: 14px;
+    padding:20px;
 }
+
+.setting-pannel div{
+    height:60px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.setting-pannel div label{
+    color:rgba(169, 169, 169, 0.655);
+    text-transform:capitalize;
+    font-size:1.3em;
+}
+
+.setting-pannel div input{
+    width:220px;
+}
+
+
+#setting-heading{
+    font-size:1.9em;
+    text-transform:uppercase;
+    font-weight:800;
+}
+
