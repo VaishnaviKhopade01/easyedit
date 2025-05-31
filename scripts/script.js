@@ -10,6 +10,37 @@ let settingMainPannel = document.getElementById("settings")
 let settingPannel = document.getElementById("setting-pannel")
 let loaderBody = document.getElementById("loader")
 
+let notificationBar = document.getElementById("notification-bar")
+let notificationtext = document.getElementById("notification-text")
+
+
+//notification function
+
+const notification =(text="deafult message",time=1000,type = "success")=>{
+    
+    notificationBar.style.left = "-1%"
+    notificationtext.innerText = text
+    
+    if(type == "success"){
+        
+        notificationBar.style.borderRight = "10px solid green"
+        
+     }else{
+         notificationBar.style.borderRight = "10px solid red"
+     }
+
+   
+    setTimeout(()=>{
+        notificationBar.style.left = "-100%"
+    },time)
+
+}
+
+notification("something went wrong",3000,"error")
+
+
+
+
 
 
 //all image control setting
@@ -93,5 +124,8 @@ sepia.addEventListener("change",()=>{
 setTimeout(()=>{
     loaderBody.style.display="none"
 },4000)
+
+
+
 
 
