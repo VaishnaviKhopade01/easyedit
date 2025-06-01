@@ -14,6 +14,8 @@ let notificationBar = document.getElementById("notification-bar")
 let notificationtext = document.getElementById("notification-text")
 
 
+let exportbtn = document.getElementById("btn-main")
+
 //notification function
 
 const notification =(text="deafult message",time=1000,type = "success")=>{
@@ -36,7 +38,7 @@ const notification =(text="deafult message",time=1000,type = "success")=>{
 
 }
 
-notification("something went wrong",3000,"error")
+// notification("",3000,"error")
 
 
 
@@ -126,6 +128,22 @@ setTimeout(()=>{
 },4000)
 
 
+//getting filters 
 
+let filters = document.getElementsByClassName("filters")
+// console.log(filters)
+
+for(let filter of filters){
+    filter.addEventListener("click",()=>{
+        let att = filter.getAttribute("class").split(" ")[1]
+        mainEditableImg.setAttribute("class",att)
+        notification("filter applied successfully",2000,"success")
+    })
+}
+
+exportbtn.addEventListener("click",()=>{
+    exportbtn.setAttribute("href",mainEditableImg.src)
+    exportbtn.set("download","edited-imgContainer.jpg")
+})
 
 
