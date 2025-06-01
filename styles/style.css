@@ -145,6 +145,12 @@ html {
     background-color: rgb(67, 66, 66);
 }
 
+.filter-container div img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+
 #img-container {
     height: 70%;
     width: 90%;
